@@ -17,7 +17,7 @@
          <action
                class="$pluginName$.$className$"
                icon="icons/sample.gif"
-               id="$pluginName$.$className;format="camel"$"
+               id="$pluginName$.$className;format="decap"$"
                label="&amp;Sample Action"
                menubarPath="sampleMenu/sampleGroup"
                toolbarPath="sampleGroup"

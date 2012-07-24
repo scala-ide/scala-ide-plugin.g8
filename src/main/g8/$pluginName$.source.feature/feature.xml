@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
   id="$pluginName$.source.feature"
-  label="Scala IDE plugin template sources"
+  label="$name$ sources"
   version="0.1.0.qualifier"
   provider-name="example.org">
 
@@ -52,7 +52,7 @@ SUCH DAMAGE.
   </license>
 
   <url>
-    <update label="Scala IDE plugin template update site" url="http://example.org/update/site"/>
+    <update label="$name$ update site" url="http://example.org/update/site"/>
   </url>
 
   <plugin

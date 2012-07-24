@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/$pluginName$.feature_0.0.0.jar" id="$pluginName$.feature" version="0.0.0">
-      <category name="template"/>
+      <category name="$pluginName$"/>
    </feature>
    <feature url="features/$pluginName$.source.feature_0.0.0.jar" id="$pluginName$.source.feature" version="0.0.0">
-      <category name="template-source"/>
+      <category name="$pluginName$-source"/>
    </feature>
-   <category-def name="template" label="Scala IDE plugin template"/>
-   <category-def name="template-source" label="Scala IDE plugin template Source"/> -->
+   <category-def name="$pluginName$" label="$name$"/>
+   <category-def name="$pluginName$-source" label="$name$ Source"/> -->
 </site>

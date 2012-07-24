@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="$pluginName$.feature"
-      label="$description$"
+      label="$name$"
       version="0.1.0.qualifier"
       provider-name="$provider$"
       plugin="$pluginName$">
@@ -52,23 +52,11 @@ SUCH DAMAGE.
    </license>
 
    <url>
-      <update label="Scala IDE plugin template update site" url="http://example.org/update/site"/>
+      <update label="$name$ update site" url="http://example.org/update/site"/>
    </url>
 
    <requires>
-      <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.eclipse.jface.text"/>
-      <import plugin="org.eclipse.ui"/>
-      <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="org.eclipse.ui.editors"/>
-      <import plugin="org.eclipse.ui.console"/>
-      <import plugin="org.eclipse.jdt.core"/>
-      <import plugin="org.eclipse.jdt.ui"/>
-      <import plugin="org.eclipse.jdt.launching"/>
-      <import plugin="org.eclipse.debug.ui"/>
-      <import plugin="org.eclipse.jdt.debug.ui"/>
-      <import plugin="org.eclipse.ui.forms"/>
-      <import plugin="org.scala-ide.sdt.core"/>
+      <import feature="org.scala-ide.sdt.feature"/>
    </requires>
 
    <plugin

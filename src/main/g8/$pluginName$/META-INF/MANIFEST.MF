@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: ScalaTest Plugin
+Bundle-Name: $name$
 Bundle-SymbolicName: $pluginName$;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Bundle-Vendor: scala-ide.org
+Bundle-Vendor: $providerName$
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Require-Bundle: 
