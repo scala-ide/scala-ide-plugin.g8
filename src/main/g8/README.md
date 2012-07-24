@@ -16,10 +16,10 @@ based on Tycho, enabling command line builds.
 
 ## Note:
 
-There is no default profile. You need to specify a profile manually, choosing what version
-of the Scala IDE and Scala compiler you want to build against:
+By default, the maven build is performed against the latest stable versions (Scala IDE 2.0 and Scala 2.9).
+The available profiles are:
 
-* `scala-ide-2.0-scala-2.9`
+* `scala-ide-2.0-scala-2.9` (default)
 * `scala-ide-2.0.x-scala-2.9`
 * `scala-ide-master-scala-2.9`
 * `scala-ide-master-scala-trunk`
