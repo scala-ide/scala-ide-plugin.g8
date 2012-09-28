@@ -1,7 +1,7 @@
 scala-ide-plugin.g8
 ===================
 
-Giger8 template for Eclipse plugins based on the Scala IDE.
+Giter8 template for Eclipse plugins based on the Scala IDE.
 
 This template produces 5 Eclipse plugins:
 
