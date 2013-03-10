@@ -1,9 +1,7 @@
-scala-ide-plugin.g8
-===================
+README
+======
 
-Giger8 template for Eclipse plugins based on the Scala IDE.
-
-This template produces 5 Eclipse plugins:
+This project contains 5 Eclipse plugins:
 
 * the plugin itself
 * the `plugin.tests` fragment
@@ -14,9 +12,24 @@ This template produces 5 Eclipse plugins:
 The projects can readily be imported inside Eclipse. Additionally, you have maven `pom` files
 based on Tycho, enabling command line builds.
 
-## Building:
+## Note:
 
-This template uses [plugin-profiles](https://github.com/scala-ide/plugin-profiles) to manage the build. Check its documentation for detailed information. The command to use looks like this:
+There are three sets of ready-to-use profiles, for different flavors of Scala and Eclipse.
 
-    mvn -Pscala-2.10.x,eclipse-indigo,scala-ide-stable clean install
+* `indigo` (default)
+    * `stable-scala-ide-scala-2.10-indigo` + `scala-2.10` (default)
+    * `stable-scala-ide-scala-2.9-indigo` + `scala-2.9`
+* `juno`
+    * `stable-scala-ide-scala-2.10-juno` + `scala-2.10`
+    * `stable-scala-ide-scala-2.9-juno` + `scala-2.9`
 
+By default, the maven build is performed against the latest stable versions (Scala IDE 3.0
+and Scala 2.10), and it targets Eclipse 3.7 (Indigo).
+
+Run maven like this:
+
+    mvn -P indigo -P stable-scala-ide-scala-2.10-indigo -P scala-2.10 clean install
+
+Or, because the above command uses only default profiles, you can shorten it to:
+
+    mvn clean install
