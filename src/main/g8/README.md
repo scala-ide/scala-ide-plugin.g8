@@ -14,16 +14,9 @@ This template produces 5 Eclipse plugins:
 The projects can readily be imported inside Eclipse. Additionally, you have maven `pom` files
 based on Tycho, enabling command line builds.
 
-## Note:
+## Building:
 
-By default, the maven build is performed against the latest stable versions (Scala IDE 2.0 and Scala 2.9).
-The available profiles are:
+This template uses [plugin-profiles](https://github.com/scala-ide/plugin-profiles) to manage the build. Check its documentation for detailed information. The command to use looks like this:
 
-* `scala-ide-2.0-scala-2.9` (default)
-* `scala-ide-2.0.x-scala-2.9`
-* `scala-ide-master-scala-2.9`
-* `scala-ide-master-scala-trunk`
+    mvn -Pscala-2.10.x,eclipse-indigo,scala-ide-stable clean install
 
-Run maven like this:
-
-    mvn -P scala-ide-master-scala-trunk clean install
