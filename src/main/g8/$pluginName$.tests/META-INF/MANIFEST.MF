@@ -5,10 +5,10 @@ Bundle-SymbolicName: $pluginName$.tests
 Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: $providerName$
 Fragment-Host: $pluginName$
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Require-Bundle: org.scala-ide.scala.library,
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.scala-lang.scala-library,
  org.eclipse.equinox.weaving.aspectj,
- org.junit4;bundle-version="4.5.0",
+ org.junit,
  org.scala-ide.sdt.core
 Import-Package: scala.tools.eclipse.testsetup,
  org.aspectj.weaver.loadtime.definition
