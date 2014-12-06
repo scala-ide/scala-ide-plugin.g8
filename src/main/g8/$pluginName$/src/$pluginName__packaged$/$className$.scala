@@ -5,7 +5,7 @@ import org.eclipse.jface.action.IAction
 import org.eclipse.jface.viewers.ISelection
 import org.eclipse.ui.IWorkbenchWindow
 import org.eclipse.ui.IFileEditorInput
-import scala.tools.eclipse.ScalaPlugin
+import org.scalaide.sdt.core.IScalaPlugin
 import org.eclipse.core.resources.IFile
 import org.eclipse.jface.dialogs.MessageDialog
 
@@ -43,7 +43,7 @@ class $className$ extends IWorkbenchWindowActionDelegate {
   }
 
   def getProjectName(file: IFile): Option[String] = {
-    ScalaPlugin.plugin.asScalaProject(file.getProject).map(_.underlying.getName)
+    IScalaPlugin().asScalaProject(file.getProject).map(_.underlying.getName)
   }
 
 }
